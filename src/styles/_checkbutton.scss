@@ -1,0 +1,41 @@
+#check{
+    display: none;
+}
+
+label{
+    img{
+    width: 0px;
+}
+}
+
+@media screen and (max-width:600px) {
+    #btn{
+        img{
+        display: flex;
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+        margin-left: 40px;
+        margin-top: 20px;
+        // z-index: 111;
+    }
+    }
+
+    #check:checked ~ #cancel{
+        img{
+        display: flex;
+        position: fixed;
+        z-index: 111;
+        width: 40px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        
+    }
+    }
+    #check:checked ~ #btn{
+        img{
+        width: 0;
+    }
+    
+}
+}

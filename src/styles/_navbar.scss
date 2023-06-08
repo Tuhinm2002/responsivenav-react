@@ -1,0 +1,22 @@
+.Nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        li{
+            list-style: none;
+            a{
+                img{
+                    width: 40px;
+                    margin-left: 20px;
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        transform: translateY(30%);
+                    }
+                }
+
+            }
+        }
+    }
+}
